@@ -67,9 +67,73 @@
                 <div class="navbar-nav ms-auto mb-2 mb-lg-0">
 
                     <?php if (isset($_SESSION['user_id'])) { ?>
-                        <span class="navbar-text">
-                            ยินดีต้องรับคุณ <?php echo $_SESSION['user_name']  . ' ' . $_SESSION['user_lastname']; ?> &nbsp;
-                        </span><a href="../user/logout.php" class="btn btn-outline-secondary rounded-pill" type="submit">ออกจากระบบ</a>
+                        <nav class="navbar">
+                            <img src="./assets/logo.png" class="navbar-logo" alt="logo" />
+                            <ul class="navbar-list">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Videos</a></li>
+                                <li><a href="#">Playlists</a></li>
+                                <li><a href="#">Community</a></li>
+                                <li><a href="#">About</a></li>
+                            </ul>
+
+                            <div class="profile-dropdown">
+                                <div onclick="toggle()" class="profile-dropdown-btn">
+                                    <div class="profile-img">
+                                        <i class="fa-solid fa-circle"></i>
+                                    </div>
+
+                                    <span>Victoria
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </span>
+                                </div>
+
+                                <ul class="profile-dropdown-list">
+                                    <li class="profile-dropdown-list-item">
+                                        <a href="#">
+                                            <i class="fa-regular fa-user"></i>
+                                            Edit Profile
+                                        </a>
+                                    </li>
+
+                                    <li class="profile-dropdown-list-item">
+                                        <a href="#">
+                                            <i class="fa-regular fa-envelope"></i>
+                                            Inbox
+                                        </a>
+                                    </li>
+
+                                    <li class="profile-dropdown-list-item">
+                                        <a href="#">
+                                            <i class="fa-solid fa-chart-line"></i>
+                                            Analytics
+                                        </a>
+                                    </li>
+
+                                    <li class="profile-dropdown-list-item">
+                                        <a href="#">
+                                            <i class="fa-solid fa-sliders"></i>
+                                            Settings
+                                        </a>
+                                    </li>
+
+                                    <li class="profile-dropdown-list-item">
+                                        <a href="#">
+                                            <i class="fa-regular fa-circle-question"></i>
+                                            Help & Support
+                                        </a>
+                                    </li>
+                                    <hr />
+
+                                    <li class="profile-dropdown-list-item">
+                                        <a href="#">
+                                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                            Log out
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
                     <?php } else { ?>
                         <a href="../1page/login.php" class="btn btn-outline-primary rounded-pill" type="submit">เข้าสู่ระบบ</a>
                         &nbsp;
