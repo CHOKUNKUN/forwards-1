@@ -74,7 +74,8 @@
                                 <li><a href="#">Videos</a></li>
                                 <li><a href="#">Playlists</a></li>
                                 <li><a href="#">Community</a></li>
-                                <li><a href="#">About</a></li>
+                                <li><a href="#">About</a></li>  
+                                
                             </ul>
 
                             <div class="profile-dropdown">
