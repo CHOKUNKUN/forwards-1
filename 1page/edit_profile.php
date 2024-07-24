@@ -49,6 +49,7 @@ $userData = $stmt->fetch(PDO::FETCH_ASSOC);
                     } ?>
                     <br>
                     <form class="imgForm" action="../user/img_pf.php" method="post" enctype="multipart/form-data">
+                        <br>
 
                         <?php if (isset($_SESSION['success'])) { ?>
 
@@ -87,6 +88,7 @@ $userData = $stmt->fetch(PDO::FETCH_ASSOC);
                                     <div class="modal-body">
                                         <div class="text-center">
                                             <div class="row">
+                                                <br>
                                                 <div class="col-lg-6" align="center">
                                                     <label onclick="start_cropping()">เลือกรูปภาพ</label>
                                                     <div id="display_image_div">
@@ -131,7 +133,7 @@ $userData = $stmt->fetch(PDO::FETCH_ASSOC);
 
                     .cropper-view-box,
                     .cropper-face {
-                        border-radius: 50%;
+                        border-radius: 100%;
                     }
 
                     /*The css styles for outline do not follow border-radius on iOS/Safari (#979).  .cropper-view-box {
